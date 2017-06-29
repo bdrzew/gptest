@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "whoSessions": {
+      "additionalProperties": false,
+      "id": "/properties/whoSessions",
+      "properties": {
+        "location": {
+          "id": "/properties/whoSessions/properties/location",
+          "type": "string"
+        },
+        "ticket": {
+          "id": "/properties/whoSessions/properties/ticket",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ticket",
+        "location"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "whoSessions"
+  ],
+  "type": "object"
+}
